@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/gender_image_view"
+        app:layout_constraintStart_toStartOf="@+id/gender_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/gender_image_view"
+        tools:text="Hassan" />
+
+    <TextView
+        android:id="@+id/country_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/work_image_view"
+        app:layout_constraintStart_toStartOf="@+id/name_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/name_text_view"
+        tools:text="KSA" />
+
+    <ImageView
+        android:id="@+id/work_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/name_text_view"
+        app:layout_constraintStart_toEndOf="@+id/name_text_view"
+        app:layout_constraintTop_toTopOf="@+id/name_text_view"
+        app:srcCompat="@drawable/ic_baseline_work_off" />
+
+    <ImageView
+        android:id="@+id/gender_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boy" />
+
+    <TextView
+        android:id="@+id/language_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/work_image_view"
+        app:layout_constraintEnd_toEndOf="@+id/work_image_view"
+        app:layout_constraintStart_toStartOf="@+id/work_image_view"
+        app:layout_constraintTop_toTopOf="@+id/work_image_view"
+        tools:text="ar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
